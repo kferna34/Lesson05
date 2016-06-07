@@ -30,5 +30,6 @@ namespace Week05_01
             this.Suit = suit;
 
         }
+
     }
 }
