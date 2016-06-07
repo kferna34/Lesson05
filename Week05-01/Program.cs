@@ -13,8 +13,6 @@ namespace Week05_01
      */
     public class Program
     {
-
-
         /**
          * the main method for our driver class Program
          * 
@@ -24,10 +22,12 @@ namespace Week05_01
          */
         public static void Main(string[] args)
         {
-
             List<Card> Deck = new List<Card>();
-
             CreateDeck(Deck);
+            DisplayDeck(Deck);
+
+            ShuffleDeck(Deck);
+            DisplayDeck(Deck);
 
 
         } // end Main
@@ -74,6 +74,7 @@ namespace Week05_01
             } // end for - suit
 
         } // end CreateDeck method
+
         public static void DisplayDeck(List<Card> deck)
         {
             Console.WriteLine("++++++++++++++++++++++++++++++++++++++");
@@ -85,8 +86,21 @@ namespace Week05_01
             }
             Console.WriteLine("++++++++++++++++++++++++++++++++++++++");
             Console.WriteLine();
+        }
+        public static void ShuffleDeck(List<Card> deck)
+        { /// creates a pseudo random number sequence and stores it in randim
+            Random random = new Random();
+            int cardCount = deck.Count;
 
-        } // end Program
+            //iterate throught the index of cards
+            for (int currentCard = 0; currentCard < cardCount; currentCard++)
+            {
+                Card tempCard = deck[currentCard]; //copy current card to temp location
+                int randomCard= random.Next(0, cardCount); //get a random card index
+                deck[currentCard] = deck[randomCard];//copy valiue from random card to current card
+                deck[randomCard] = tempCard; // copy current curret card to random card
+            }
+        }
+    } // end Program
 
-    } // end namespace
-}
+} // end namespace

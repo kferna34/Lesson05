@@ -12,10 +12,10 @@ namespace Week05_01
     /// @class card
     public class Card
     {
-        private int face;
+      
 
         //public prop +++++++++++++++++++++++++++++++++++++++++++
-        public string Face { get; set; }
+        public int Face { get; set; }
         public string Suit { get; set; }
 
         /// <summary>
@@ -24,17 +24,11 @@ namespace Week05_01
         /// @constructor Card
         /// @param {string} face
         /// @param{string} suit
-        public Card(string face, string suit)
+        public Card(int face, string suit)
         {
             this.Face = face;
             this.Suit = suit;
 
-        }
-
-        public Card(int face, string suit)
-        {
-            this.face = face;
-            Suit = suit;
         }
     }
 }
