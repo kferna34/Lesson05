@@ -12,6 +12,7 @@ namespace Week05_01
     /// @class card
     public class Card
     {
+        private int face;
 
         //public prop +++++++++++++++++++++++++++++++++++++++++++
         public string Face { get; set; }
@@ -28,6 +29,12 @@ namespace Week05_01
             this.Face = face;
             this.Suit = suit;
 
+        }
+
+        public Card(int face, string suit)
+        {
+            this.face = face;
+            Suit = suit;
         }
     }
 }

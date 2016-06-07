@@ -13,64 +13,80 @@ namespace Week05_01
      */
     public class Program
     {
-        // public static List<Card> Deck = new List<Card>();
+
+
         /**
          * the main method for our driver class Program
          * 
          * @method Main
          * @param {sting[]} args
+         * @returns {void}
          */
         public static void Main(string[] args)
         {
-            //create instance of the Student class
-            Student tommy = new Student("Tommy", 20, "S123456789");
-            tommy.SaysHello();
-
-            Console.WriteLine();
-
-            tommy.Studies();
-
-            tommy.Courses.Add(new Course("COMP123", "Programming 2"));
-            tommy.Courses.Add(new Course("COMP125", "Client-Side Web Development"));
-            tommy.Courses.Add(new Course("COMP397", "web game programming"));
-
-            //Console.WriteLine(tommy.Courses);
-            tommy.ShowCourses();
-
-            Console.WriteLine();
-
-            // create instance of the Teacher class
-            Teacher tom = new Teacher("Tom", 47, "T123456789");
-
-            tom.SaysHello();
-
-            Console.WriteLine();
-
-            tom.Teaches();
-
-            List<string> names = new List<string>();
-            names.Add("Tom");
-            names.Add("mary");
-            names.Add("ruthvik");
-
-            int count = 0;
-            foreach (string name in names)
-            {
-                Console.WriteLine(name);
-                count++;
-            }
 
             List<Card> Deck = new List<Card>();
-            CreateDeck(Deck)
-        }
+
+            CreateDeck(Deck);
 
 
+        } // end Main
 
-        public static void CreateDeck(string hello)
+        // PUBLIC STATIC METHODS ++++++++++++++++++++++++++++++++++++++++++++++++++++
+
+        /**
+         * <summary>
+         * This method loads a list of cards with Card objects
+         * </summary>
+         * 
+         * @method CreateDeck
+         * @param {List<Card>} deck
+         * @returns {void}
+         */
+        public static void CreateDeck(List<Card> deck)
         {
+            string suit = "";
 
-        }
-    }
+            for (int suitIndex = 0; suitIndex < 4; suitIndex++)
+            {
+                switch (suitIndex)
+                {
+                    case 0:
+                        suit = "hearts";
+                        break;
+                    case 1:
+                        suit = "clubs";
+                        break;
+                    case 2:
+                        suit = "diamonds";
+                        break;
+                    case 3:
+                        suit = "spades";
+                        break;
 
+                } // end suit switch
 
+                for (int face = 1; face < 14; face++)
+                {
+                    deck.Add(new Card(face, suit));
+                } // end for - face
+
+            } // end for - suit
+
+        } // end CreateDeck method
+        public static void DisplayDeck(List<Card> deck)
+        {
+            Console.WriteLine("++++++++++++++++++++++++++++++++++++++");
+            Console.WriteLine("+Current Deck                        +");
+            Console.WriteLine("++++++++++++++++++++++++++++++++++++++");
+            foreach (Card card in deck)
+            {
+                Console.WriteLine("{0} of {1}", card.Face, card.Suit);
+            }
+            Console.WriteLine("++++++++++++++++++++++++++++++++++++++");
+            Console.WriteLine();
+
+        } // end Program
+
+    } // end namespace
 }
