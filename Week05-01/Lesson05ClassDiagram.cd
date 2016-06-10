@@ -8,7 +8,7 @@
     </TypeIdentifier>
   </Class>
   <Class Name="Week05_01.Deck">
-    <Position X="4.25" Y="0.5" Width="1.5" />
+    <Position X="2.5" Y="1" Width="1.5" />
     <TypeIdentifier>
       <HashCode>AAAAAAAAAAAAAACAAAAAAQAAAAAABAAAAAAIAAAAAAA=</HashCode>
       <FileName>Deck.cs</FileName>
@@ -33,6 +33,13 @@
     <TypeIdentifier>
       <HashCode>gAAAAAAAAAAggAAAEAAEAIAAAAAFBAAAAAgAAAgAAEE=</HashCode>
       <FileName>Faces.cs</FileName>
+    </TypeIdentifier>
+  </Enum>
+  <Enum Name="Week05_01.SceneStates">
+    <Position X="7.25" Y="0.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAIAAAAAACAAAAAAAAAAAAAAAAAIAAABAAAAAAAAAAA=</HashCode>
+      <FileName>SceneStates.cs</FileName>
     </TypeIdentifier>
   </Enum>
   <Font Name="Segoe UI" Size="9" />
