@@ -1,0 +1,39 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ClassDiagram MajorVersion="1" MinorVersion="1" MembersFormat="FullSignature">
+  <Class Name="Week05_01.Card">
+    <Position X="0.5" Y="2" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAABAAAAAAAAAAAAABAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Card.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Week05_01.Deck">
+    <Position X="4.25" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAACAAAAAAQAAAAAABAAAAAAIAAAAAAA=</HashCode>
+      <FileName>Deck.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Week05_01.Program">
+    <Position X="1" Y="4.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAABAAAAAA=</HashCode>
+      <FileName>Program.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Enum Name="Week05_01.Suits" Collapsed="true">
+    <Position X="0.5" Y="1.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAEEAAAAAAAABAAAAAAAAAAAAAAAAAAAACA=</HashCode>
+      <FileName>Suits.cs</FileName>
+    </TypeIdentifier>
+  </Enum>
+  <Enum Name="Week05_01.Faces" Collapsed="true">
+    <Position X="0.5" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>gAAAAAAAAAAggAAAEAAEAIAAAAAFBAAAAAgAAAgAAEE=</HashCode>
+      <FileName>Faces.cs</FileName>
+    </TypeIdentifier>
+  </Enum>
+  <Font Name="Segoe UI" Size="9" />
+</ClassDiagram>

@@ -15,16 +15,16 @@ namespace Week05_01
       
 
         //public prop +++++++++++++++++++++++++++++++++++++++++++
-        public int Face { get; set; }
-        public string Suit { get; set; }
+        public Faces Face { get; set; }
+        public Suits Suit { get; set; }
 
         /// <summary>
         /// this constructor takes 2 param: face & suit to instantiate a card object
         /// </summary>
         /// @constructor Card
-        /// @param {string} face
-        /// @param{string} suit
-        public Card(int face, string suit)
+        /// @param {Faces} face
+        /// @param{Suits} suit
+        public Card(Faces face, Suits suit)
         {
             this.Face = face;
             this.Suit = suit;

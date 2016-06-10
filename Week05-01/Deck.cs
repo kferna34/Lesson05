@@ -28,36 +28,44 @@ namespace Week05_01
         }
         private void _createDeck()
         {
-            string suit = "";
+            foreach (Suits suits in Enum.GetValues(typeof(Suits) ))
+            {
+                foreach (Faces face in Enum.GetValues (typeof(Faces)))
+                {
+                    this.Add(new Card(face, suits));
+                }
+            }
+            Card myCard =new Card(Faces.Ace, Suits.Hearts);
+            // string suit = "";
 
             for (int suitIndex = 0; suitIndex < 4; suitIndex++)
             {
-                switch (suitIndex)
-                {
-                    case 0:
-                        suit = "hearts";
-                        break;
-                    case 1:
-                        suit = "clubs";
-                        break;
-                    case 2:
-                        suit = "diamonds";
-                        break;
-                    case 3:
-                        suit = "spades";
-                        break;
+                //    switch (suitIndex)
+                //    {
+                //        case 0:
+                //            suit = "hearts";
+                //            break;
+                //        case 1:
+                //            suit = "clubs";
+                //            break;
+                //        case 2:
+                //            suit = "diamonds";
+                //            break;
+                //        case 3:
+                //            suit = "spades";
+                //            break;
 
-                } // end suit switch
+                //    } // end suit switch
 
-                for (int face = 1; face < 14; face++)
-                {
-                    this.Add(new Card(face, suit));
-                } // end for - face
+                //    for (int face = 1; face < 14; face++)
+                //    {
+                //        this.Add(new Card(face, suit));
+                //    } // end for - face
 
-            } // end for - suit
+                //} // end for - suit
 
-        } // end CreateDeck method
-
+            } // end CreateDeck method
+        }
         public void Display()
         {
             Console.WriteLine("++++++++++++++++++++++++++++++++++++++");
